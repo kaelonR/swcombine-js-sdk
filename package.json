@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A promise-based client for the Star Wars Combine Web Services 2.0 API that supports both javascript and typescript",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,26 +17,29 @@
     "Combine",
     "API"
   ],
-  "author": "J141/Tisdar Parrelli",
+  "author": "Kaelon/Tisdar Parrelli",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/J141/swcombine-js-api/issues"
+    "url": "https://github.com/KaelonR/swcombine-js-api/issues"
   },
-  "homepage": "https://github.com/J141/swcombine-js-api#readme",
+  "homepage": "https://github.com/KaelonR/swcombine-js-api#readme",
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^1.6.7"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^8.2.1",
-    "@typescript-eslint/eslint-plugin": "^4.27.0",
-    "@typescript-eslint/parser": "^4.27.0",
-    "chai": "^4.3.4",
-    "eslint": "^7.29.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.23.4",
-    "mocha": "^9.0.1",
-    "rollup": "^2.52.2",
-    "sinon": "^11.1.1",
-    "typescript": "^4.3.4"
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/register": "^7.23.7",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "chai": "^5.0.3",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.3",
+    "rollup": "^4.9.6",
+    "sinon": "^17.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 }
