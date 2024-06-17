@@ -1,18 +1,32 @@
 
+  
+
 # Star Wars Combine Web Services 2.0 JS SDK
 
+  
+
 The SDK is currently a WIP. Status is as follows:
+
 ## API SDK Status
 
+  
+
 :x: = Not yet implemented
+
 :construction: = Partially implemented
+
 :heavy_check_mark: = Implemented
+
 :white_check_mark: = Implemented and covered by tests
+
 |Resource|default client|authenticated client|
 |--|--|--|
+**OAuth**|:x:|:x:
+|Get token using server flow (node.js only)|:x:|:x:
+|Get token using client flow (browser only)|:x:|:x:
+| Get granted permissions|:x:|:x:
 |**Permissions**|:x:|:x:
 | List permissions|:x:|:x:|
-| Get granted permissions|:x:|:x:
 |**Rate Limits**|:x:|:x:
 | List rate limits|:x:|:x:
 |**Time**|:x:|:x:
@@ -80,6 +94,3 @@ The SDK is currently a WIP. Status is as follows:
 |List entities by class and type|:x:|:x:
 |Get type for existing entity|:x:|:x:
 |List all entity types|:x:|:x:
-
-
-
