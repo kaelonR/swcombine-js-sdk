@@ -1,7 +1,7 @@
-export default abstract class SwcApiResponse<T> {
+export default interface SwcApiResponse<T> {
   version: string;
   timestamp: number;
   resource: string;
   request: string;
-  abstract swcapi: T;
+  swcapi: T;
 }

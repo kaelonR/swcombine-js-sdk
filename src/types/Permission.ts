@@ -3,7 +3,6 @@ export default class Permission {
 
   public readonly description: string;
 
-  // eslint-disable-next-line no-use-before-define
   public readonly inheritedPermissions: Permission[] = [];
 
   public constructor(name: string, description: string, inheritedPermissions: Permission[] = []) {

@@ -1,20 +1,18 @@
 import SwcApiResponse from "../SwcApiResponse";
 
-export class GetPermissionsResponse extends SwcApiResponse<GetPermissionsResponsePermissions> {
-  swcapi: GetPermissionsResponsePermissions;
-}
+export type GetPermissionsResponse = SwcApiResponse<GetPermissionsResponsePermissions>;
 
-export class GetPermissionsResponsePermissions {
+interface GetPermissionsResponsePermissions {
   permissions: {
     permission: GetPermissionsResponsePermission[]
   }
 }
 
-export class GetPermissionsResponsePermission {
+interface GetPermissionsResponsePermission {
   attributes: GetPermissionsResponsePermissionAttributes
 }
 
-export class GetPermissionsResponsePermissionAttributes {
+interface GetPermissionsResponsePermissionAttributes {
   name: string;
   description: string
   inherits: string;
