@@ -1,5 +1,3 @@
-import axios from "axios";
-
 export abstract class Resource {
   private resourceName: string;
 
@@ -9,9 +7,9 @@ export abstract class Resource {
 
   protected async get<T>(endpointUrl: string): Promise<T> {
     const url = `https://www.swcombine.com/ws/v2.0/${this.resourceName}/${endpointUrl}`;
-    const response = await axios.get<T>(url, {headers: {
+    const response = await fetch(url, {headers: {
       Accept: 'application/json'
     }});
-    return response.data;
+    return response.json();
   }
 }

@@ -1,18 +1,48 @@
 {
   "compilerOptions": {
-    "outDir": "./lib",
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "module": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["node", "vite/client"],
+    "skipLibCheck": true,
+    "allowJs": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "stripInternal": true,
+
+    /* Bundler mode */
+    "outDir": "dist",
     "sourceMap": true,
-    "module": "es2020",
-    "moduleResolution": "node",
-    "target": "es2020",
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
+    "declaration": true,
+    "declarationMap": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "strict": true
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "typeRoots": [
+      "node_modules/@types",
+      "./src/interfaces",
+      "./src/types"
+    ]
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "src/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

@@ -1,5 +1,5 @@
 import SwcTimestamp from "../src/types/SwcTimestamp.js";
-import { expect } from "chai";
+import { describe, it, expect } from 'vitest';
 
 describe('SWCTimestampTests', () => {
   it('should convert from SWC time to unix time', () => {

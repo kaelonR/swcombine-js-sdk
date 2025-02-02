@@ -1,5 +1,0 @@
-{
-  "require": "./tests/ts-node-esm.js",
-  "extensions": ["ts"],
-  "spec": ["tests/**/*.spec.ts"]
-}
