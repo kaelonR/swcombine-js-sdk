@@ -14,7 +14,7 @@
 
     /* Bundler mode */
     "outDir": "dist",
-    "sourceMap": true,
+    "sourceMap": false,
     "declaration": true,
     "declarationMap": true,
     "moduleResolution": "bundler",
