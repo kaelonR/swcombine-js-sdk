@@ -81,9 +81,9 @@ The SDK is currently a WIP. Status is as follows:
 | Clear all tags from entity                 | :x:                | OAuth :lock:     | [personal/faction]\_inv_[inventory]_tags_write                                                             |
 | **<h3>Location</h3>**                      | :x:                |                  |                                                                                                            |
 | Get location for specified entity          | :x:                | OAuth :lock:     | character_location                                                                                         |
-| **<h3>Market</h3>**                        | :x:                |                  |                                                                                                            |
-| List all public market vendors             | :x:                | Public           |                                                                                                            |
-| Get vendor info                            | :x:                | Public           |                                                                                                            |
+| **<h3>Market</h3>**                        | :x:                |                  |
+| List all public market vendors             | :x:                | Public           |
+| Get vendor info                            | :x:                | Public           |
 | **<h3>News</h3>**                          | :x:                |                  |                                                                                                            |
 | List GNS news                              | :x:                | Public           |                                                                                                            |
 | Get one GNS Item                           | :x:                | Public           |                                                                                                            |
@@ -95,3 +95,4 @@ The SDK is currently a WIP. Status is as follows:
 | List entities by class and type            | :x:                | Public           |                                                                                                            |
 | Get type for existing entity               | :x:                | Public           |                                                                                                            |
 | List all entity types                      | :x:                | Public           |                                                                                                            |
+
