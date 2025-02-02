@@ -1,23 +1,73 @@
 {
-  "name": "swcombine-js-api",
-  "version": "1.0.0",
+  "name": "swcombine.js",
+  "version": "0.0.1",
   "description": "",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [
+    "swcombine",
+    "sdk"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/index.esm.js",
+        "types": "./dist/index.d.mts"
+      },
+      "require": {
+        "default": "./dist/index.cjs.js",
+        "types": "./dist/index.d.mts"
+      }
+    }
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && vite build",
+    "packit": "npm run build && npm pack --pack-destination packs",
+    "gen-docs": "npx typedoc",
+    "test": "vitest"
+  },
+  "contributors": [
+    {
+      "name": "kaelon",
+      "email": "j.dekoning141@gmail.com"
+    },
+    {
+      "name": "karnthis",
+      "email": "me@erinrivas.com"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swc-unnamed/swcombine-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/swc-unnamed/swcombine-js/issues"
+  },
+  "homepage": "https://github.com/swc-unnamed/swcombine-js/#README",
   "devDependencies": {
-    "@types/chai": "^4.3.16",
-    "@types/mocha": "^10.0.6",
-    "@types/sinon": "^17.0.3",
-    "chai": "^5.1.1",
-    "mocha": "^10.4.0",
-    "sinon": "^18.0.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/node": "^22.13.0",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "@vitest/coverage-v8": "^3.0.4",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "prettier": "^3.4.2",
+    "rollup-plugin-node-externals": "^8.0.0",
+    "rollup-plugin-typescript-paths": "^1.5.0",
+    "tslib": "^2.8.1",
+    "typedoc": "^0.27.6",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11",
+    "vite-plugin-dts": "^4.5.0",
+    "vite-plugin-node-polyfills": "^0.23.0",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.0.4"
   }
 }
