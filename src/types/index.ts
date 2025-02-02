@@ -1,2 +1,2 @@
 export * from './Permission'
-export * from './SwcTimestamp'
+export * from './misc'

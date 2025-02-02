@@ -1,0 +1,1 @@
+export type TTimestampUnitOptions = 'sec' | 'ms' | 'seconds' | 'milliseconds'
