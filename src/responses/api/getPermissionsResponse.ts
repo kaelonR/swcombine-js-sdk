@@ -1,6 +1,6 @@
-import SwcApiResponse from "../SwcApiResponse";
+import SwcApiResponse from '../SwcApiResponse'
 
-export type GetPermissionsResponse = SwcApiResponse<GetPermissionsResponsePermissions>;
+export type GetPermissionsResponse = SwcApiResponse<GetPermissionsResponsePermissions>
 
 interface GetPermissionsResponsePermissions {
   permissions: {
@@ -13,7 +13,7 @@ interface GetPermissionsResponsePermission {
 }
 
 interface GetPermissionsResponsePermissionAttributes {
-  name: string;
+  name: string
   description: string
-  inherits: string;
+  inherits: string
 }

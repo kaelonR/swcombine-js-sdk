@@ -4,4 +4,4 @@ dist/
 node_modules/
 packs/
 .prettierrc
-tslint.json
+package.json
