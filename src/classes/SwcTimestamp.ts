@@ -1,10 +1,17 @@
-import { IInitiationMoment, ISwcTimestamp} from '@/interfaces'
-import { TTimestampUnitOptions } from '@/types'
+import { InitiationMoment} from '@/interfaces'
+import { TimestampUnitOptions } from '@/types'
 
 /**
  * Utility class for working with Star Wars Combine timestamps. Represents Combine  Galactic Time and can convert unix timestamps and Date objects to/from CGT.
+ * @method toUnixTimestamp
+ * @method toDate
+ * @method getYear
+ * @method getDay
+ * @method getHour
+ * @method getMinute
+ * @method getSecond
  */
-export class SwcTimestamp implements ISwcTimestamp {
+export class SwcTimestamp {
   protected year: number
   protected day: number
   protected hour: number
@@ -15,9 +22,9 @@ export class SwcTimestamp implements ISwcTimestamp {
 
   /**
    * Create a new SwcTimestamp object for a specific moment in Combine Galactic Time.
-   * @param {IInitiationMoment} source
+   * @param {InitiationMoment} source
    */
-  constructor(source: IInitiationMoment) {
+  constructor(source: InitiationMoment) {
     const {
       year,
       day,
@@ -36,9 +43,9 @@ export class SwcTimestamp implements ISwcTimestamp {
   /**
    * Convert a unix timestamp to Combine Galactic Time.
    * @param {number} unixTimestamp timestamp to convert. Can be either seconds or milliseconds, the code will detect which units to use.
-   * @returns {ISwcTimestamp}
+   * @returns {SwcTimestamp}
    */
-  static fromUnixTimestamp(unixTimestamp: number): ISwcTimestamp {
+  static fromUnixTimestamp(unixTimestamp: number): SwcTimestamp {
     if (unixTimestamp < 100000000000) {
       unixTimestamp = unixTimestamp * 1000
     }
@@ -48,26 +55,26 @@ export class SwcTimestamp implements ISwcTimestamp {
   /**
    * Convert a Date object into Combine Galactic Time.
    * @param {Date} date
-   * @returns {ISwcTimestamp}
+   * @returns {SwcTimestamp}
    */
-  static fromDate(date: Date): ISwcTimestamp {
+  static fromDate(date: Date): SwcTimestamp {
     return this.calculateSwcTimestampFromMillisecondsSinceStart(date.getTime() - this.swcStart.getTime())
   }
 
   /**
    * Get the current Combine Galactic Time.
-   * @returns {ISwcTimestamp}
+   * @returns {SwcTimestamp}
    */
-  static now(): ISwcTimestamp {
+  static now(): SwcTimestamp {
     return SwcTimestamp.fromDate(new Date())
   }
 
   /**
    * Convert the SWC timestamp into a unix timestamp
-   * @param {TTimestampUnitOptions} unit Whether the unix timestamp should be in seconds or milliseconds.
+   * @param {TimestampUnitOptions} unit Whether the unix timestamp should be in seconds or milliseconds.
    * @returns {number}
    */
-  toUnixTimestamp(unit: TTimestampUnitOptions): number {
+  toUnixTimestamp(unit: TimestampUnitOptions): number {
     const raw = this.calculateMillisecondsSinceStartFromSwcTimestamp() + SwcTimestamp.swcStart.getTime()
     if (unit === 'sec' || unit === 'seconds') {
       return raw / 1000
@@ -122,10 +129,10 @@ export class SwcTimestamp implements ISwcTimestamp {
   /**
    *
    * @param {number} msSinceSwcStart
-   * @returns {ISwcTimestamp}
+   * @returns {SwcTimestamp}
    * @private
    */
-  private static calculateSwcTimestampFromMillisecondsSinceStart(msSinceSwcStart: number): ISwcTimestamp {
+  private static calculateSwcTimestampFromMillisecondsSinceStart(msSinceSwcStart: number): SwcTimestamp {
     const msPerYear = 365 * 24 * 60 * 60 * 1000
     const msPerDay = 24 * 60 * 60 * 1000
     const msPerHour = 60 * 60 * 1000

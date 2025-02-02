@@ -1,3 +1,4 @@
-export * from './classes'
+export * from './api'
 
-export * from './IInitiationMoment'
+export * from './InitiationMoment'
+export * from './SwcApiResponse'

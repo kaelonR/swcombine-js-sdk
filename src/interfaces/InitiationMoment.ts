@@ -1,4 +1,4 @@
-export interface IInitiationMoment {
+export interface InitiationMoment {
   year: number
   day: number
   hour?: number
