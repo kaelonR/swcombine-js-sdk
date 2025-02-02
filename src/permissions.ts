@@ -7,19 +7,19 @@ export default Object.freeze({
     skills: 'character_skills',
     credits: Object.freeze({
       read: 'character_credits',
-      readWrite: 'character_credits_write'
+      readWrite: 'character_credits_write',
     }),
     force: 'character_force',
     location: 'character_location',
     events: 'character_events',
-    all: 'character_all'
+    all: 'character_all',
   }),
 
   messages: Object.freeze({
     read: 'messages_read',
     send: 'messages_send',
     delete: 'messages_delete',
-    all: 'messages_all'
+    all: 'messages_all',
   }),
 
   faction: Object.freeze({
@@ -28,30 +28,30 @@ export default Object.freeze({
     stocks: 'faction_stocks',
     credits: Object.freeze({
       read: 'faction_credits_read',
-      readWrite: 'faction_credits_write'
+      readWrite: 'faction_credits_write',
     }),
     budgets: Object.freeze({
       read: 'faction_budgets_read',
-      readWrite: 'faction_budgets_write'
+      readWrite: 'faction_budgets_write',
     }),
     datacards: Object.freeze({
       read: 'faction_datacards_read',
       readWrite: 'faction_datacards_write',
     }),
-    all: 'faction_all'
+    all: 'faction_all',
   }),
 
   personalInventory: Object.freeze({
     ships: Object.freeze({
-        read: 'personal_inv_ships_read',
-        rename: 'personal_inv_ships_rename',
-        assign: 'personal_inv_ships_assign',
-        makeover: 'personal_inv_ships_makeover',
-        tags: Object.freeze({
-          read: 'personal_inv_ships_tags_read',
-          readWrite: 'personal_inv_ships_tags_write'
-        }),
-        all: 'personal_inv_ships_all'
+      read: 'personal_inv_ships_read',
+      rename: 'personal_inv_ships_rename',
+      assign: 'personal_inv_ships_assign',
+      makeover: 'personal_inv_ships_makeover',
+      tags: Object.freeze({
+        read: 'personal_inv_ships_tags_read',
+        readWrite: 'personal_inv_ships_tags_write',
+      }),
+      all: 'personal_inv_ships_all',
     }),
     vehicles: Object.freeze({
       read: 'personal_inv_vehicles_read',
@@ -60,9 +60,9 @@ export default Object.freeze({
       makeover: 'personal_inv_vehicles_makeover',
       tags: Object.freeze({
         read: 'personal_inv_vehicles_tags_read',
-        readWrite: 'personal_inv_vehicles_tags_write'
+        readWrite: 'personal_inv_vehicles_tags_write',
       }),
-      all: 'personal_inv_vehicles_all'
+      all: 'personal_inv_vehicles_all',
     }),
     stations: Object.freeze({
       read: 'personal_inv_stations_read',
@@ -71,9 +71,9 @@ export default Object.freeze({
       makeover: 'personal_inv_stations_makeover',
       tags: Object.freeze({
         read: 'personal_inv_stations_tags_read',
-        readWrite: 'personal_inv_stations_tags_write'
+        readWrite: 'personal_inv_stations_tags_write',
       }),
-      all: 'personal_inv_stations_all'
+      all: 'personal_inv_stations_all',
     }),
     cities: Object.freeze({
       read: 'personal_inv_cities_read',
@@ -82,9 +82,9 @@ export default Object.freeze({
       makeover: 'personal_inv_cities_makeover',
       tags: Object.freeze({
         read: 'personal_inv_cities_tags_read',
-        readWrite: 'personal_inv_cities_tags_write'
+        readWrite: 'personal_inv_cities_tags_write',
       }),
-      all: 'personal_inv_cities_all'
+      all: 'personal_inv_cities_all',
     }),
     facilities: Object.freeze({
       read: 'personal_inv_facilities_read',
@@ -93,9 +93,9 @@ export default Object.freeze({
       makeover: 'personal_inv_facilities_makeover',
       tags: Object.freeze({
         read: 'personal_inv_facilities_tags_read',
-        readWrite: 'personal_inv_facilities_tags_write'
+        readWrite: 'personal_inv_facilities_tags_write',
       }),
-      all: 'personal_inv_facilities_all'
+      all: 'personal_inv_facilities_all',
     }),
     planets: Object.freeze({
       read: 'personal_inv_planets_read',
@@ -104,9 +104,9 @@ export default Object.freeze({
       makeover: 'personal_inv_planets_makeover',
       tags: Object.freeze({
         read: 'personal_inv_planets_tags_read',
-        readWrite: 'personal_inv_planets_tags_write'
+        readWrite: 'personal_inv_planets_tags_write',
       }),
-      all: 'personal_inv_planets_all'
+      all: 'personal_inv_planets_all',
     }),
     items: Object.freeze({
       read: 'personal_inv_items_read',
@@ -115,9 +115,9 @@ export default Object.freeze({
       makeover: 'personal_inv_items_makeover',
       tags: Object.freeze({
         read: 'personal_inv_items_tags_read',
-        readWrite: 'personal_inv_items_tags_write'
+        readWrite: 'personal_inv_items_tags_write',
       }),
-      all: 'personal_inv_items_all'
+      all: 'personal_inv_items_all',
     }),
     npcs: Object.freeze({
       read: 'personal_inv_npcs_read',
@@ -126,9 +126,9 @@ export default Object.freeze({
       makeover: 'personal_inv_npcs_makeover',
       tags: Object.freeze({
         read: 'personal_inv_npcs_tags_read',
-        readWrite: 'personal_inv_npcs_tags_write'
+        readWrite: 'personal_inv_npcs_tags_write',
       }),
-      all: 'personal_inv_npcs_all'
+      all: 'personal_inv_npcs_all',
     }),
     droids: Object.freeze({
       read: 'personal_inv_droids_read',
@@ -137,9 +137,9 @@ export default Object.freeze({
       makeover: 'personal_inv_droids_makeover',
       tags: Object.freeze({
         read: 'personal_inv_droids_tags_read',
-        readWrite: 'personal_inv_droids_tags_write'
+        readWrite: 'personal_inv_droids_tags_write',
       }),
-      all: 'personal_inv_droids_all'
+      all: 'personal_inv_droids_all',
     }),
     materials: Object.freeze({
       read: 'personal_inv_materials_read',
@@ -148,9 +148,9 @@ export default Object.freeze({
       makeover: 'personal_inv_materials_makeover',
       tags: Object.freeze({
         read: 'personal_inv_materials_tags_read',
-        readWrite: 'personal_inv_materials_tags_write'
+        readWrite: 'personal_inv_materials_tags_write',
       }),
-      all: 'personal_inv_materials_all'
+      all: 'personal_inv_materials_all',
     }),
     creatures: Object.freeze({
       read: 'personal_inv_creatures_read',
@@ -159,9 +159,9 @@ export default Object.freeze({
       makeover: 'personal_inv_creatures_makeover',
       tags: Object.freeze({
         read: 'personal_inv_creatures_tags_read',
-        readWrite: 'personal_inv_creatures_tags_write'
+        readWrite: 'personal_inv_creatures_tags_write',
       }),
-      all: 'personal_inv_creatures_all'
+      all: 'personal_inv_creatures_all',
     }),
   }),
 
@@ -173,9 +173,9 @@ export default Object.freeze({
       makeover: 'faction_inv_ships_makeover',
       tags: Object.freeze({
         read: 'faction_inv_ships_tags_read',
-        readWrite: 'faction_inv_ships_tags_write'
+        readWrite: 'faction_inv_ships_tags_write',
       }),
-      all: 'faction_inv_ships_all'
+      all: 'faction_inv_ships_all',
     }),
     vehicles: Object.freeze({
       read: 'faction_inv_vehicles_read',
@@ -184,9 +184,9 @@ export default Object.freeze({
       makeover: 'faction_inv_vehicles_makeover',
       tags: Object.freeze({
         read: 'faction_inv_vehicles_tags_read',
-        readWrite: 'faction_inv_vehicles_tags_write'
+        readWrite: 'faction_inv_vehicles_tags_write',
       }),
-      all: 'faction_inv_vehicles_all'
+      all: 'faction_inv_vehicles_all',
     }),
     stations: Object.freeze({
       read: 'faction_inv_stations_read',
@@ -195,9 +195,9 @@ export default Object.freeze({
       makeover: 'faction_inv_stations_makeover',
       tags: Object.freeze({
         read: 'faction_inv_stations_tags_read',
-        readWrite: 'faction_inv_stations_tags_write'
+        readWrite: 'faction_inv_stations_tags_write',
       }),
-      all: 'faction_inv_stations_all'
+      all: 'faction_inv_stations_all',
     }),
     cities: Object.freeze({
       read: 'faction_inv_cities_read',
@@ -206,9 +206,9 @@ export default Object.freeze({
       makeover: 'faction_inv_cities_makeover',
       tags: Object.freeze({
         read: 'faction_inv_cities_tags_read',
-        readWrite: 'faction_inv_cities_tags_write'
+        readWrite: 'faction_inv_cities_tags_write',
       }),
-      all: 'faction_inv_cities_all'
+      all: 'faction_inv_cities_all',
     }),
     facilities: Object.freeze({
       read: 'faction_inv_facilities_read',
@@ -217,9 +217,9 @@ export default Object.freeze({
       makeover: 'faction_inv_facilities_makeover',
       tags: Object.freeze({
         read: 'faction_inv_facilities_tags_read',
-        readWrite: 'faction_inv_facilities_tags_write'
+        readWrite: 'faction_inv_facilities_tags_write',
       }),
-      all: 'faction_inv_facilities_all'
+      all: 'faction_inv_facilities_all',
     }),
     planets: Object.freeze({
       read: 'faction_inv_planets_read',
@@ -228,9 +228,9 @@ export default Object.freeze({
       makeover: 'faction_inv_planets_makeover',
       tags: Object.freeze({
         read: 'faction_inv_planets_tags_read',
-        readWrite: 'faction_inv_planets_tags_write'
+        readWrite: 'faction_inv_planets_tags_write',
       }),
-      all: 'faction_inv_planets_all'
+      all: 'faction_inv_planets_all',
     }),
     items: Object.freeze({
       read: 'faction_inv_items_read',
@@ -239,9 +239,9 @@ export default Object.freeze({
       makeover: 'faction_inv_items_makeover',
       tags: Object.freeze({
         read: 'faction_inv_items_tags_read',
-        readWrite: 'faction_inv_items_tags_write'
+        readWrite: 'faction_inv_items_tags_write',
       }),
-      all: 'faction_inv_items_all'
+      all: 'faction_inv_items_all',
     }),
     npcs: Object.freeze({
       read: 'faction_inv_npcs_read',
@@ -250,9 +250,9 @@ export default Object.freeze({
       makeover: 'faction_inv_npcs_makeover',
       tags: Object.freeze({
         read: 'faction_inv_npcs_tags_read',
-        readWrite: 'faction_inv_npcs_tags_write'
+        readWrite: 'faction_inv_npcs_tags_write',
       }),
-      all: 'faction_inv_npcs_all'
+      all: 'faction_inv_npcs_all',
     }),
     droids: Object.freeze({
       read: 'faction_inv_droids_read',
@@ -261,9 +261,9 @@ export default Object.freeze({
       makeover: 'faction_inv_droids_makeover',
       tags: Object.freeze({
         read: 'faction_inv_droids_tags_read',
-        readWrite: 'faction_inv_droids_tags_write'
+        readWrite: 'faction_inv_droids_tags_write',
       }),
-      all: 'faction_inv_droids_all'
+      all: 'faction_inv_droids_all',
     }),
     materials: Object.freeze({
       read: 'faction_inv_materials_read',
@@ -272,9 +272,9 @@ export default Object.freeze({
       makeover: 'faction_inv_materials_makeover',
       tags: Object.freeze({
         read: 'faction_inv_materials_tags_read',
-        readWrite: 'faction_inv_materials_tags_write'
+        readWrite: 'faction_inv_materials_tags_write',
       }),
-      all: 'faction_inv_materials_all'
+      all: 'faction_inv_materials_all',
     }),
     creatures: Object.freeze({
       read: 'faction_inv_creatures_read',
@@ -283,9 +283,9 @@ export default Object.freeze({
       makeover: 'faction_inv_creatures_makeover',
       tags: Object.freeze({
         read: 'faction_inv_creatures_tags_read',
-        readWrite: 'faction_inv_creatures_tags_write'
+        readWrite: 'faction_inv_creatures_tags_write',
       }),
-      all: 'faction_inv_creatures_all'
+      all: 'faction_inv_creatures_all',
     }),
-  })
+  }),
 })

@@ -1,9 +1,0 @@
-{
-  "defaultSeverity": "error",
-  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
-  "jsRules": {},
-  "rules": {
-    "trailing-comma": [ true ]
-  },
-  "rulesDirectory": []
-}

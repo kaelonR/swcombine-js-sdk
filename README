@@ -11,7 +11,7 @@ The SDK is currently a WIP. Status is as follows:
 - :white_check_mark: = Implemented and covered by tests
 
 | Endpoint                                   | Status             | Availability     | OAuth scope required (if applicable)                                                                       |
-|--------------------------------------------|--------------------|------------------|------------------------------------------------------------------------------------------------------------|
+| ------------------------------------------ | ------------------ | ---------------- | ---------------------------------------------------------------------------------------------------------- |
 | **<h3>OAuth</h3>**                         | :x:                | Public           |                                                                                                            |
 | Get token using server flow (node.js only) | :x:                | Public           |                                                                                                            |
 | Get token using client flow (browser only) | :x:                | Public           |                                                                                                            |
@@ -70,15 +70,15 @@ The SDK is currently a WIP. Status is as follows:
 | List cities                                | :x:                | Public           |                                                                                                            |
 | Get city by uid                            | :x:                | Public           |                                                                                                            |
 | **<h3>Inventory</h3>**                     | :x:                |                  |                                                                                                            |
-| List inventories                           | :x:                | OAuth :lock:     | [personal/faction]_inv_overview                                                                            |
-| List entities in inventory                 | :x:                | OAuth :lock:     | [personal/faction]\_inv_[inventory]_read                                                                   |
-| Get one entity in inventory                | :x:                | OAuth :lock:     | [personal/faction]\_inv_[inventory]_read                                                                   |
-| Modify entity info                         | :x:                | OAuth :lock:     | [personal/faction]\_inv_[inventory]_assign                                                                 |
-| Rename entity                              | :x:                | OAuth :lock:     | [personal/faction]\_inv_[inventory]_rename                                                                 |
-| Makeover entity                            | :x:                | OAuth :lock:     | [personal/faction]\_inv_[inventory]_makeover                                                               |
-| Apply tag to entity                        | :x:                | OAuth :lock:     | [personal/faction]\_inv_[inventory]_tags_write                                                             |
-| Remove tag from entity                     | :x:                | OAuth :lock:     | [personal/faction]\_inv_[inventory]_tags_write                                                             |
-| Clear all tags from entity                 | :x:                | OAuth :lock:     | [personal/faction]\_inv_[inventory]_tags_write                                                             |
+| List inventories                           | :x:                | OAuth :lock:     | [personal/faction]\_inv_overview                                                                           |
+| List entities in inventory                 | :x:                | OAuth :lock:     | [personal/faction]\_inv\_[inventory]\_read                                                                 |
+| Get one entity in inventory                | :x:                | OAuth :lock:     | [personal/faction]\_inv\_[inventory]\_read                                                                 |
+| Modify entity info                         | :x:                | OAuth :lock:     | [personal/faction]\_inv\_[inventory]\_assign                                                               |
+| Rename entity                              | :x:                | OAuth :lock:     | [personal/faction]\_inv\_[inventory]\_rename                                                               |
+| Makeover entity                            | :x:                | OAuth :lock:     | [personal/faction]\_inv\_[inventory]\_makeover                                                             |
+| Apply tag to entity                        | :x:                | OAuth :lock:     | [personal/faction]\_inv\_[inventory]\_tags_write                                                           |
+| Remove tag from entity                     | :x:                | OAuth :lock:     | [personal/faction]\_inv\_[inventory]\_tags_write                                                           |
+| Clear all tags from entity                 | :x:                | OAuth :lock:     | [personal/faction]\_inv\_[inventory]\_tags_write                                                           |
 | **<h3>Location</h3>**                      | :x:                |                  |                                                                                                            |
 | Get location for specified entity          | :x:                | OAuth :lock:     | character_location                                                                                         |
 | **<h3>Market</h3>**                        | :x:                |                  |
